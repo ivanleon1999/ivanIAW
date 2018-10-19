@@ -24,6 +24,8 @@ public class Ejercicio04 {
 			System.out.println("Es abundante");
 		else
 			System.out.println("no es abundante");
+		
+		sc.close();
 	}
 
 	private static int comprobar(int num) {
@@ -43,6 +45,7 @@ public class Ejercicio04 {
 		
 		return si;
 		
+
 	}	
 }
 
