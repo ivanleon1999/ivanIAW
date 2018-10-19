@@ -9,12 +9,14 @@ public class Ejercicio06 {
 	
 	public static void main(String[] args) {
 		
-		int numero;
-
-	for (int i = 0; i < 11; i++) {
-			System.out.println(numero + " x " + i + " = " + (i*numero));
-		}
+		int numero = 0;
 		
+		for (int i = 1; i < 11; i++) {
+			System.out.println("Tabla del " + i);
+			for (int j = 1; j < 11; j++) {
+				System.out.println(i + " x " + j + " = " + (i*j));
+			}
+		}
 		
 		System.out.println("de que numero deseas ver la tabla");
 		numero = SC.nextInt();
