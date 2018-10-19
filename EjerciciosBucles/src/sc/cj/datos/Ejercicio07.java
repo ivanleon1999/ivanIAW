@@ -23,14 +23,12 @@ public class Ejercicio07 {
 
 		if(esPrimo(i))
 			contadorDePrimos++;
-		
-		
 	}
+	
 	System.out.println(contadorDePrimos);
 	
 	sc.close();
 	}
-
 
 
 	private static boolean esPrimo(int num) { //para devolver si es primo o no

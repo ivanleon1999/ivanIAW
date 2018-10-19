@@ -46,7 +46,7 @@ public class Ejercicio09 {
 		
 		for (int i = 0; i < cant; i++) {
 			
-			numero = new Random().nextInt(100); //es un numero ramdom
+			numero = new Random().nextInt(100); //es un numero ramdom del 1 al 100
 			System.out.print(numero + " ");
 			
 			if (i == 0) 
