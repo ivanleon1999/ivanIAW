@@ -11,23 +11,37 @@ public class Ejercicio07 {
 	
 	public static void main(String[] args) {
 		
-	int contador = 0, numero=0;
+	int numero=0;	
+	do {
+		System.out.println("numero");
+		numero = sc.nextInt();
+	} while (numero < 1);
 	
-	System.out.println("Numero");
-	numero = sc.nextInt();
-	
-		for (int i = 1; i < numero; i++) {
-			if (i == 2 || i == 3) {
-				contador++;
-			}else if((i % 2) != 0 || (i % 3) != 0 ) {
-				contador++;
-			}else {
-			}
-		}	
-		System.out.println("hay " + contador + " numeros primos");		
-		
+	int contadorDePrimos = 0;
+
+	for (int i = 2; i < numero; i++) {
+
+		if(esPrimo(i))
+			contadorDePrimos++;
 		
 		
 	}
+	System.out.println(contadorDePrimos);
 	
+	sc.close();
+	}
+
+
+
+	private static boolean esPrimo(int num) { //para devolver si es primo o no
+		
+		boolean primo = true;
+		
+		for (int j = 2; j < num && primo; j++) {
+			if ((num % j)==0)
+				primo = false;
+		}
+		
+		return primo;
+	}
 }
