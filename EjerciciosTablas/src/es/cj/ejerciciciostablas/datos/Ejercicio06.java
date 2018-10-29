@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ejercicio05 {
+public class Ejercicio06 {
 	
 	private static Scanner sc = new Scanner(System.in);
 	private static int [] numeros;

@@ -19,23 +19,22 @@ public class Ejercicio05 {
 		do {
 			System.out.println("Deme un numero");
 			num = sc.nextInt();
-			
-			System.out.println("El numero se repite " + repetir(num));
-			System.out.println("Y la primera vez que sale en la posicion" + posicion(num));
-			
+			if (num != 0) {
+			System.out.println("El numero se repite " + repetir(num) + " veces.");
+			System.out.println("Y la primera vez que sale en la posicion: " + posicion(num));
+			}else
+			System.out.println("se ha finalizado el bucle");
 		} while (num != 0);
-		System.out.println("ya estaria");
-		
+
 		sc.close();
 	}
 	
 	private static int posicion(int num) {
-		int valor = 0;
+		int valor = -1;
 		for (int i = 0; i < numeros.length; i++) {
 			if (numeros[i] == num) {
 				valor = i;
-				return valor;
-			}
+				return valor;}
 		}
 		return valor;
 	}
@@ -55,7 +54,4 @@ public class Ejercicio05 {
 		}
 		System.out.println("L tabla es" + Arrays.toString(numeros));
 	}	
-	
-	
-	
 }
