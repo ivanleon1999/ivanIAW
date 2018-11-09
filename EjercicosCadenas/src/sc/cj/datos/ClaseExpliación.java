@@ -1,5 +1,7 @@
 package sc.cj.datos;
 
+import java.util.Arrays;
+
 public class ClaseExpliación {
 
 	public static void main(String[] args) {
@@ -35,5 +37,47 @@ public class ClaseExpliación {
 		//contrar de a de
 		System.out.println(cadena1.substring(0, 3));
 		
+		//
+		char[] letras = cadena1.toCharArray();
+		System.out.println(Arrays.toString(letras));
+		
+		
+		//para qitar los espacios
+		String usuario = "javiyo";
+		usuario = usuario.trim();
+		System.out.println(usuario);
+	
+		//convertir en buffer cadena modificable 
+		 StringBuffer sb = new StringBuffer(cadena1);
+		//para añadir cosas en la cadena al final por elñ apend
+		sb.append("adios");
+		System.out.println(sb.toString());
+		
+		sb.insert(0, "inicio");
+		System.out.println(sb.toString());
+		//borrar caracter
+		sb.deleteCharAt(3);
+		//sustituir
+		sb.replace(0, 3, "avion");
+		//darle la vuelta
+		sb.reverse();
+		
+		String frase = "hola que tal estas";
+		//dibidir la frase palabra a palabra
+		String [] palabras = frase.split(" ");
+		//lo meto en la tabla para que la podamos tener
+		
+		//para quitarle las comas y que me lo lea
+		String [] numeros = palabras[4].split(";");
+		for (int i = 0; i < numeros.length; i++) {
+			System.out.println(numeros[i]);
+		}
+		
+	
+	
+	
+	
+	
+	
 	}
 }
