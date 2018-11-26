@@ -42,11 +42,20 @@ public class Circulo {
 	}
 	
 	
+	//metodos
 	public double calcularDistanciaDesde(Punto p) {
 		return centro.CalcularDistanciaDesde(p);
 	}
 	
+	public double calcularArea() {
+		
+		return Math.PI*Math.pow(radio, 2);
+	}
 	
+	public double calculaPerimetro() {
+		
+		return Math.PI*radio;
+	}
 	
 	
 }
